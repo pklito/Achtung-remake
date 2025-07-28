@@ -52,55 +52,63 @@ public class GameManager : Singleton<GameManager>
     }
 
     void FixedUpdate()
-    {   
+    {
+        if (frozen)
+        {
+            toggleFreeze();
+        }
+
         switch (roundState)
         {
-        case GameState.ONGOING: // Mid round
-        {
-            if(paused)
-            {
-                paused = false; // kind of like on press of button maybe change later
-                toggleFreeze();
-            }
+            case GameState.ONGOING: // Mid round
+                {
+                    if (paused)
+                    {
+                        paused = false; // kind of like on press of button maybe change later
+                        toggleFreeze();
+                    }
 
-            if(!frozen) // game running and not paused
-            {
-                powerupHandler();
-                roundState = checkGameState();
-            }
-        }
-        break;
-        case GameState.ENDED: // Round ended
-        {
-            if(paused){
-                paused = false;
-                nextRound();
-            }
-        }
-        break;
-        case GameState.WON: // round was won, called once
-        {
-            roundState = GameState.ENDED;
-            freeze();
+                    if (!frozen) // game running and not paused
+                    {
+                        powerupHandler();
+                        roundState = checkGameState();
+                    }
+                }
+                break;
+            case GameState.ENDED: // Round ended
+                {
+                    if (paused)
+                    {
+                        paused = false;
+                        nextRound();
+                    }
+                }
+                break;
+            case GameState.WON: // round was won, called once
+                {
+                    roundState = GameState.ENDED;
+                    freeze();
 
-            PlayerController winner = getWinner();
-            Debug.Log(winner.playerName + " Wins!");
+                    PlayerController winner = getWinner();
+                    Debug.Log(winner.playerName + " Wins!");
 
-            if(scores[winner.playerNum-1] >= Settings.Instance.goal)
-            {
-                winGame(winner);
-            }
-        }
-        break;
-        case GameState.TIED: // round was tied, called once
-        {
-            roundState = GameState.ENDED;
-            freeze();
+                    if (scores[winner.playerNum - 1] >= Settings.Instance.goal)
+                    {
+                        winGame(winner);
+                    }
+                }
+                break;
+            case GameState.TIED: // round was tied, called once
+                {
+                    roundState = GameState.ENDED;
+                    freeze();
 
-            Debug.Log("Tied");
+                    Debug.Log("Tied");
+                }
+                break;
         }
-        break;
-        }
+        roundState = GameState.ONGOING;
+
     }
 
 

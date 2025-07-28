@@ -8,7 +8,7 @@ public class UIManager : Singleton<UIManager>
     private GameObject canvas;
     private TextMeshProUGUI scoreboard;
     private TextMeshProUGUI goal;
-
+    
     void Awake()
     {
         canvas = GameObject.Find("UICanvas");

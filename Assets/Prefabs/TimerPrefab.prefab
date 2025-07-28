@@ -33,7 +33,6 @@ RectTransform:
   m_Children:
   - {fileID: 2392464227699281967}
   m_Father: {fileID: 5560103764804985088}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -122,7 +121,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7297832407295754777}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -173,7 +171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5560103764804985088}
-  - component: {fileID: 5572403729922157814}
+  - component: {fileID: 7616571176236799710}
   m_Layer: 5
   m_Name: TimerPrefab
   m_TagString: Untagged
@@ -195,14 +193,13 @@ RectTransform:
   m_Children:
   - {fileID: 7297832407295754777}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5572403729922157814
+--- !u!114 &7616571176236799710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,10 +208,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6205360262480553609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90fef5f6a4c2e7b468be4d685732243a, type: 3}
+  m_Script: {fileID: 11500000, guid: 723e028aab0c9ba4fb59c95e54105b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _duration: 5
   _level: 1
   mask: {fileID: 6288828962152032026}
   maskRectTransform: {fileID: 7297832407295754777}
-  imageRectTransform: {fileID: 2392464227699281967}
+  imageRectTransform: {fileID: 7297832407295754777}

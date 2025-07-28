@@ -1,5 +1,5 @@
 {
-    "name": "Ultimate Achtung",
+    "name": "PlayerControls",
     "maps": [
         {
             "name": "Player",
@@ -9,7 +9,7 @@
                     "name": "Right",
                     "type": "Button",
                     "id": "53c98188-c434-42ae-b70e-d070ae55cd51",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -18,7 +18,7 @@
                     "name": "Left",
                     "type": "Button",
                     "id": "4b450d41-3f4a-4b68-91f6-4a604137586b",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false

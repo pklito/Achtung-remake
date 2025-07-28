@@ -7,7 +7,7 @@ public class Settings : Singleton<Settings>
     [Header("=== Game Settings ===")]
     [Space(20)]
 
-    [SerializeField] [Min(2)] public int numberOfPlayers = 2;
+    [SerializeField] [Min(1)] public int numberOfPlayers = 1;
 
     // score to reach to win the game
     public int goal = 10;
