@@ -53,11 +53,6 @@ public class GameManager : Singleton<GameManager>
 
     void FixedUpdate()
     {
-        if (frozen)
-        {
-            toggleFreeze();
-        }
-
         switch (roundState)
         {
             case GameState.ONGOING: // Mid round
@@ -107,8 +102,6 @@ public class GameManager : Singleton<GameManager>
                 }
                 break;
         }
-        roundState = GameState.ONGOING;
-
     }
 
 

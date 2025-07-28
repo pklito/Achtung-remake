@@ -57,7 +57,7 @@ public class CircleTimer : MonoBehaviour
             SendMessageUpwards("DestroyTimer", this);
         }
 
-        mask.fillAmount = (_duration-_timer) / _duration;
+        // mask.fillAmount = (_duration-_timer) / _duration;
         if(!GameManager.Instance.isFrozen()) _timer += Time.fixedDeltaTime;
     }
 

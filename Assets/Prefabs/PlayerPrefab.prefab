@@ -84,7 +84,7 @@ SpriteRenderer:
   m_Size: {x: 0.17, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4422574101359404410
@@ -139,8 +139,8 @@ MonoBehaviour:
   leftPressed: 0
   playerName: 
   playerNum: 0
-  circleSprite: {fileID: -2413806693520163455, guid: 18cfd5a2310c95f4e9c55815e3d8a38e, type: 3}
-  squareSprite: {fileID: 7482667652216324306, guid: 4b2819fdec284f747b9ca8296371a130, type: 3}
+  circleSprite: {fileID: 21300000, guid: 18cfd5a2310c95f4e9c55815e3d8a38e, type: 3}
+  squareSprite: {fileID: 21300000, guid: 4b2819fdec284f747b9ca8296371a130, type: 3}
   trailPiecePrefab: {fileID: 8734439403696564753, guid: bca5d5bc64d678843b5c8c5496e8591f, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   _body: {fileID: 4422574102261269906}
@@ -357,7 +357,7 @@ SpriteRenderer:
   m_Size: {x: 0.15, y: 0.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &6647740178700896984
